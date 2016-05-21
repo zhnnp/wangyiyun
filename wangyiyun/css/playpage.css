@@ -1,0 +1,43 @@
+/* CSS Document */
+body{ margin:0px; padding:0px; width:100%; height:100%;}
+ul{ margin:0px ; padding:0px;}
+li{ float:left; text-align:center; vertical-align:middle; list-style:none; cursor:pointer}
+.music-logo{ width:400px; height:450px; float:left; }
+.music-lrc{ width:600px; height:400px; float:left; margin-left:50px;}
+.logo-bg-circle{ width:300px; height:300px; border-radius:150px; margin-top:50px; margin-left:50px; background-color:#CCCCCC}
+
+.logo-circle{ width:290px; height:290px; border-radius:145px; position:absolute; left:55px; top:55px;background-color:#000000;-ms-animation: 20s linear 0s normal none infinite rotate; background-image:url(../img/1.jpg);}
+.logo-circle-purse{width:290px; height:290px; border-radius:145px; position:absolute; left:55px; top:55px;background-color:#000000;-ms-animation: 0s linear 0s normal none infinite rotate; background-image:url(../img/1.jpg);}
+
+
+.circle-min{ width:100px; height:100px; z-index:1; border-radius:50px; margin:95px; border:solid #FFFFFF 2px; background-color:#FFFFFF;filter:alpha(opacity=50);opacity:0.5}
+.circle-cd{ width:290px; height:290px;-ms-animation:5s linear 0s normal none infinite rotate; border-radius:145px; position:absolute; left:55px; top:55px; background-image:url(../img/logo/cd-hover3.png)}
+
+.circle-cd-purse{ width:290px; height:290px;-ms-animation:0s linear 0s normal none infinite rotate; border-radius:145px; position:absolute; left:55px; top:55px; background-image:url(../img/logo/cd-hover3.png)}
+
+.circle-min-min{ width:90px; height:90px;border-radius:45px; top:102px; z-index:2; left:102px;position:absolute; background-color:#000000}
+.circle-min-min img{ width:100%; height:100%;}
+.logo-col{ width:400px; height:50px; margin-top:20px; }
+.logo-col li{ width:60px; height:25px; line-height:25px; background-color:#CCCCCC; margin-left:30px; border:solid #CCCCCC 1px;}
+.logo-col span{ color:#000000; font-size:14px}
+
+.lrc-title{ width:100%; height:60px;}
+.lrc-title-name{ width:100%; height:35px; line-height:35px; text-align:left; vertical-align:middle;}
+.lrc-title-name span{ font-size:20px; font-weight:bold; color:#333333}
+.lrc-title-info{ width:100%; height:25px; border-bottom:solid #666666 1px;}
+.lrc-title-info li{ height:25px; width:150px; line-height:25px; text-align:left; margin-right:20px;} 
+.lrc-title-info span{ color:#333333; font-size:13px;}
+.lrc-title-info a{ color:#0000FF; font-size:13px; text-decoration:none}
+.lrc-main{ width:100%; height:350px; }
+.lrc-main iframe{ width:100%; height:100%;}
+
+
+.pinglun{ width:700px; height:550px; position:absolute;top:450px; background-color:#FF0000}
+.page-to-min{ width:30px; height:30px; cursor:pointer; border:solid #000000 1px; border-radius:5px; position:absolute; background-color:#CCCCCC; left:1150px; top:2%;}
+.page-to-min:hover{ background-color:#FF0000; border:solid #FF0000 1px;}
+.to-min-img{ width:30px; height:30px; margin:0 auto;}
+.to-min-img img{ width:100%; height:100%;}
+@-ms-keyframes rotate{
+from{-ms-transform:rotate(0deg)}
+to{-ms-transform:rotate(360deg)}
+}

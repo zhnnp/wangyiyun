@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>网易云音乐</title>
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<script type="text/javascript" language="javascript" src="js/index.js"></script>
+
+
+</head>
+
+<body onload="init()">
+
+<!--=S play-->
+<div class="play" id="paly">
+  <!--==S play main-->
+  <div class="play-main" >
+    <!--===S main left-->
+    <div class="main-left">
+      <!--====S left header-->
+      <div class="left-header">
+        <!--=====S header btn-->
+        <div class="left-logo-style"><img src="img/logo/left-btn.png" /></div>
+        <!--=====E header btn-->
+      </div>
+      <!--====E left header-->
+      <!--====S left main-->
+      <div class="left-main">
+        <!--=====S left iframe-->
+        <iframe class="left-frame" frameborder="0" src="left.html"></iframe>
+        <!--=====E left iframe-->
+      </div>
+      <!--====E left main-->
+      <!--====S left footer-->
+      <div class="left-footer">
+        <!--=====S user login head-->
+        <div class="user-head" id="userInfoBtn"><img src="img/logo/login-out.png" title="用户" /></div>
+        <!--=====E user login head-->
+        <!--=====S user name-->
+        <div class="user-name" id="userNameBtn"><span title="用户">未登录</span></div>
+        <!--=====E user name-->
+        <!--=====S user info-->
+        <div class="user-info" id="userMessageBtn"><img class="user-info-img" title="信息" src="img/logo/mail.png" /></div>
+        <!--=====E user info-->
+        <!--=====S user set-->
+        <div class="user-info" id="userSet"><img class="user-info-img" title="设置" src="img/logo/set.png" /></div>
+        <!--=====E user set-->
+      </div>
+      <!--====E left footer-->
+    </div>
+    <!--===E main left-->
+    <!--===S main right-->
+    <div class="main-right" id="mainRight">
+      <!--====S right iframe-->
+      <iframe class="right-iframe" frameborder="0" id="rightIframe" src="right.html"></iframe>
+      <!--====E right iframe-->
+    </div>
+    <!--===E main right-->
+  </div>
+  <!--==E play main-->
+</div>
+<!--==S play bar-->
+<div class="play-bar">
+  <!--===S bar left-->
+  <div class="bar-left" id="musicLogo"><img src="img/1.jpg" /></div>
+  <div class="bar-left-hover" id="musicLogoHover" title="点击打开播放界面"><img id="musicLogos" src="img/logo/music-logo-hover.png" /></div>
+  <!--===E bar left-->
+  <!--===S bar content-->
+  <div class="bar-content">
+    <!--====S bar music btn-->
+    <div class="bar-control-btn">
+      <div class="bar-btn" id="last"><img src="img/logo/toleft.png" title="上一首" /></div>
+      <div class="bar-btn" id="play"><img id="playBgi" src="img/logo/pause.png" title="播放/暂停" /></div>
+      <div class="bar-btn"><img src="img/logo/toright.png"  title="下一首"/></div>
+    </div>
+    <!--====E bar music btn-->
+    <!--====S bar schedule-->
+    <div class="bar-schedule">
+      <!--=====S music info-->
+      <div class="music-info">
+        <div class="music-name"><span class="music-info-span" id="musicName">&nbsp-&nbsp</span></div>
+        <div class="music-time"><span id="audioNowTime" class="music-info-span">&nbsp;&nbsp;/&nbsp;&nbsp;</span></div>
+      </div>
+      <!--=====E music info-->
+      <div class="music-schedule" id="example">
+        <div class="music-schedule-bar" id="barParentMod"><div class="bar-move" id="barMove"></div></div>
+        <div class="music-schedule-btn" title="拖动快进" id="audioScheduleBtn"><div></div></div>
+		
+      </div>
+    </div>
+    <!--====E bar schedule-->
+  </div>
+  <!--===E bar content-->
+  <!--===S bar right-->
+  <div class="bar-right">
+    <div class="music-set"><img style="width:25px; height:25px; margin-top:2px;" id="toLove"  src="img/logo/love.png" /></div>
+    <div class="music-set"><img id="playType" src="img/logo/play-list-suiji.png" /></div>
+    <div class="music-set"><img src="img/logo/volume-max.png" /></div>
+    <div class="music-set"><img id="musicListBtn" src="img/logo//user-nowplaylist.png" /></div>
+  </div>
+  <!--===E bar right-->
+</div>
+<!--=E play-->
+<!--S music list now-->
+<div class="music-list-now" id="musicListNow">
+  <div class="nowlist-header">
+    <div class="headers">
+      <div class="list-now" style="margin-left:10px;"><span>播放列表</span></div>
+      <div class="list-old"><span>历史记录</span></div>
+    </div>
+    <div class="headers">
+      <div class="clearall-img"><img src="img/logo/addtolist.png" /></div>
+      <div class="addall"><span>收藏全部</span></div>
+      <div class="clearall-img"><img src="img/logo/del.png" /></div>
+      <div class="addall"><span>清空</span></div>
+    </div>
+    <div class="music-list-close"><img  src="img/logo/x.png" title="关闭"/></div>
+  </div>
+  <div class="nowlist-lists"></div>
+</div>
+<!--E music list now-->
+<!--S music list box:z2-->
+<div class="play-info-box" id="setBox" >
+  <div></div>
+</div>
+<!--E music list box:z2-->
+<!--S user notice box:z2-->
+<div class="play-info-box" id="userInfoBox">
+  <div class="userinfo-header"><span>帐号：</span></div>
+  <div class="userinfo-main">
+    <div class="userinfo-main-title"><span>登陆网易云音乐</span></div>
+    <div class="userinfo-main-title"><span>手机电脑多端同步，320k高音质无限下载</span></div>
+    <div class="user-login-btn" title="单击登录"><span>登&nbsp;&nbsp;录</span></div>
+  </div>
+  <div class="rightBoxHr" ></div>
+  <div class="userinfo-titles" title="选择">
+    <div class="userinfo-titles-logo"> <img  src="img/logo/yinyuebao.png"/> </div>
+    <div class="userinfo-titles-title"><span>付费音乐包</span></div>
+    <div class="userinfo-titles-footer"><span>></span></div>
+  </div>
+  <div class="userinfo-titles" title="选择">
+    <div class="userinfo-titles-logo" > <img  src="img/logo/jifen.png"/> </div>
+    <div class="userinfo-titles-title"><span>积分商城</span></div>
+    <div class="userinfo-titles-footer"><span>></span></div>
+  </div>
+  <div class="userinfo-titles" title="选择">
+    <div class="userinfo-titles-logo"> <img  src="img/logo/abort.png"/> </div>
+    <div class="userinfo-titles-title"><span>关于网易云音乐</span></div>
+    <div class="userinfo-titles-footer"><span>></span></div>
+  </div>
+</div>
+<!--S user notice box:z2-->
+<!--S play set box:z2-->
+<div class="play-info-box" id="userMessageBox"></div>
+<!--S play set box:z2-->
+<!--S play type title-->
+<div class="play-type-title-box" id="playTypeBox"></div>
+<!--E play type title-->
+<!--S add music list box-->
+<div class="add-fileter-box" id="musicAddFilterDiv"></div>
+<div class="add-input-box" id="musicAddBox">
+  <div class="add-box"><span>新建歌单：</span></div>
+  <div class="add-box">
+    <input id="newMusicListName" type="text" />
+  </div>
+  <div class="add-txt-count"><span id="addMusicTxtCount">20</span></div>
+  <div class="musicBtn">
+    <input style="background-color:#669999; margin-left:60px; cursor:default; color:#CCCCCC" type="submit"  disabled="true" value="确定"/>
+    <input  style="margin-left:30px;"type="button" id="claerAddMusic"  value="取消"/>
+  </div>
+</div>
+<!--E add music list box-->
+
+
+
+
+<div class="play-page" id="playPage">
+  <iframe class="play-page-iframe" id="playIframe" frameborder="0" src="playpage.html" ></iframe>
+</div>
+
+
+
+
+
+<audio preload="autoplay" id="localAudio" >
+<source src="music\香泽兰.mp3" type="audio/mp3">
+<source src="music\封锁线.mp3" type="audio/mp3">
+<source src="music\遇见.mp3" type="audio/mp3"> 
+</audio>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

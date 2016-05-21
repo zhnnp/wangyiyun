@@ -1,0 +1,184 @@
+/* CSS Document */
+
+/*
+ *INFO:index css style
+ *AUTO:zhang peng
+ *TIME:2016-02-15 to 2016-02-25
+*/
+
+
+/*CSS INFO:
+ *play:播放器样式
+ *play-main:播放器内容模块样式 In：play
+ *play-bar:播放器播放条模块样式 In：play
+ *main-left:内容区左边菜单模块样式 In：play-main
+ *main-right:内容区右边内容模块样式 In：play-main
+ *right-iframe-style:内容区右边iframe框架样式 In：main-right
+ *left-header:左边菜单模块header区域样式 In：main-left
+ *left-main:左边菜单main区域样式 In：main-left
+ *left-footer:左边菜单footer区域样式 In：main-left
+ *left-iframe:左边菜单main区域iframe框架样式 In：left-main
+*/
+
+html{ overflow: hidden;}
+/*body:lable*/
+body{ margin:0px; padding:0px;  }
+
+
+/*=play*/
+.play{width:100%; height:100%;}
+
+
+
+/*==play-content*/
+.play-main{ width:100%; height:100%;}
+
+
+/*==play-bar*/
+.play-bar{ width:100%; height:64px; border-top:solid #CCCCCC 2px;}
+
+
+/*===content-left*/
+.main-left{ width:14%; height:100%; float:left; background-color:#F3F3F5; border-right:solid #CCCCCC 2px;}
+
+
+/*===content-right*/
+.main-right{ width:86%; height:100%; float:left;}
+
+
+/*====right-iframe-style*/
+.right-iframe{ width:100%; height:100%;}
+
+
+/*====left-header*/
+.left-header{ width:100%; height:30px; border-bottom:solid #CCCCCC 1px; }
+
+/*=====left-logo-style*/
+.left-logo-style{ width:20px; height:20px; margin-top:10px; margin-left:10px;cursor:pointer}
+.left-logo-style img{ width:100%; height:100%;}
+
+/*====left-main*/
+.left-main{ width:100%; height:490px;}
+
+
+/*====left-footer*/
+.left-footer{  width:100%; height:75px;border-top:solid #CCCCCC 1px;}
+
+
+/*=====left-iframe*/
+.left-frame{ width:192px; height:490px; background-color:#999999}
+
+/*===bar-header*/
+.bar-left{ width:63px; height:62px; margin-left:1px; margin-top:1px; z-index:10; float:left; background-color:#D6D8DA}
+.bar-left img{ width:100%; height:100%}
+
+.bar-left-hover{ display:none; width:63px; height:61px; top:610px; z-index:11; position:absolute; margin-left:1px;background-color:#000000;filter:alpha(opacity=70); opacity:0.7; cursor:pointer}
+@-moz-document url-prefix(){.bar-left-hover{ display:none; width:63px; height:61px; top:598px; z-index:11; position:absolute; margin-left:1px;background-color:#000000;filter:alpha(opacity=70); opacity:0.7; cursor:pointer}}
+.bar-left-hover img{ width:100%; height:100%;}
+
+/*===bar-main*/
+.bar-content{ width:74%; height:62px;float:left;}
+.bar-control-btn{ width:16%;min-width:150px;  height:62px; float:left; }
+
+.bar-btn{ width:28%; height:62px; margin-left:6px; float:left; cursor:pointer }
+.bar-btn img{ width:45px; height:45px; margin-top:10px;}
+
+.bar-schedule{ width:84%; height:62px;float:left;}
+.music-info{ width:100%; height:40%;}
+.music-name{ width:150px; height:100%; float:left; line-height:30px; text-align:left; vertical-align:middle}
+.music-time{ width:150px; height:100%; float:right;line-height:30px; text-align:right; vertical-align:middle}
+.music-info-span{ font-size:12px; font-family:"宋体"; color:#666666}
+.music-schedule{ width:100%; height:60%;}
+.music-schedule-bar{ width:62%;min-width:160px; height:5px; border-radius:3px; background-color:#999999; margin-top:8px;z-index:1; position:absolute;}
+ 
+.bar-move{ width:1px; height:100%;border-radius:2px; background-color:#FF0000}
+.music-schedule-btn{ width:20px; height:20px;border-radius:10px; left:220px; position:absolute; z-index:2; border:solid #999999 1px; cursor:pointer; background-color: #FFFFFF }
+.music-schedule-btn:hover{ background-color:#FEE0D6; }
+.music-schedule-btn div{ width:6px; height:6px; border-radius:3px; background-color:#FF0000; margin-left:7px; margin-top:7px}
+.music-set{ width:30px; height:30px; margin-top:15px; margin-left:25px; float:left; cursor:pointer}
+.music-set img{ width:100%; height:100%;}
+
+/*===bar-right*/
+.bar-right{height:61px; margin-left:1px; float:left; margin-top:1px;}
+
+/*play-list-box*/
+.play-list-box{ width:480px; height:480px; border:solid #CCCCCC 1px; position:absolute; z-index:2; left:885px; top:135px; display:none; background-color:#FFF8DC}
+
+/*play-info-box*/
+.play-info-box{ width:300px; height:605px; position:absolute; z-index:2; left:1366px; background-color:#FFFFFF; top:0px; display:block; border:solid #CCCCCC 1px;}
+@-moz-document url-prefix(){.play-info-box{ width:300px; height:592px; position:absolute; z-index:2; left:1366px; background-color:#FFFFFF; top:0px; display:block; border:solid #CCCCCC 1px;}}
+.userinfo-header{ width:100%; height:35px; border-bottom:solid #999999 1px; padding-left:10px; line-height:45px; text-align:left; vertical-align:bottom}
+.userinfo-header span{ font-size:13px; font-weight:bold; font-family:"宋体"; color:#666666}
+.userinfo-main{ width:230px; height:100px; margin:10% 10%; padding-top:10px;}
+.rightBoxHr{ border-top:solid #999999 1px;}
+.userinfo-main-title{ width:100%; height:20px; line-height:20px; text-align:center; vertical-align:middle} 
+.userinfo-main-title span{ font-size:12px; color:#333333; font-family:"宋体"}
+.user-login-btn{ width:100%; height:30px; background-color:#006633; line-height:30px; text-align:center; vertical-align:middle; border-radius:5px; margin-top:10px; cursor:pointer;color:#CCCCCC}
+.user-login-btn:hover{ background-color:#009900; color:#FFFFFF}
+.user-login-btn span{ font-family:"宋体"; font-weight:bold; font-size:14px; }
+.userinfo-titles{ width:80%; height:35px; margin:10% 10%; cursor:pointer; border-bottom:solid #FFFFFF 2px;} 
+.userinfo-titles:hover{ border-bottom:solid #006633 2px;}
+.userinfo-titles-logo{ width:25px; height:25px; padding-top:4px;float:left;}
+.userinfo-titles-logo img{ width:100%; height:100%}
+.userinfo-titles-title{ width:150px; height:35px; float:left; line-height:35px; text-align:left; vertical-align:middle;}
+.userinfo-titles-title span{ font-size:14px; color:#666666; font-family:"宋体"}
+.userinfo-titles-footer{ width:50px; height:35px; line-height:35px; text-align:right; float:left;vertical-align:middle;}
+.userinfo-titles-footer span{ color:#666666; font-size:25px; font-family:"宋体"}
+/*user-login-head*/
+.user-head{ width:40px; height:40px; margin-top:14px; border:solid #999999 1px;border-radius:20px; margin-left:10px;float:left;  cursor:pointer}
+.user-head:hover{ background-color:#CCCCCC; border:solid #FF0000 1px;}
+.user-head img{ width:100%; height:100%;}
+
+.user-name{width:40px; height:40px; margin-left:10px;margin-top:15px; margin-right:20px;float:left;line-height:40px; text-align:left; vertical-align:middle;cursor:pointer}
+.user-name span{ font-size:12px; font-family:"宋体"; color:#666666}
+.user-name span:hover{ color:#FF0000}
+/*user-info*/
+.user-info{width:20px; height:20px; margin-left:10px; margin-top:25px; float:left; cursor:pointer}
+.user-info img{ width:100%; height:100%}
+
+.music-list-now{ width:480px; height:475px; display:none; background-color:#FFFFFF; border:solid #999999 1px; position:absolute; left:886px; top:132px;}
+.nowlist-header{ width:100%; height:50px; background-color:#CCCCCC; border-bottom:solid #999999 1px; }
+.nowlist-lists{ width:100%; height:425px; background-color:#FFFFFF}
+.headers{ width:40%; height:100%; float:left}
+.list-now{ width:55px; height:22px; float:left; cursor:pointer; margin-top:13px; line-height:20px; text-align:center; vertical-align:middle; background-color:#FFFFFF; border:solid #666666 1px;}
+.list-now span{ color:#333333; font-size:12px; font-family:"宋体"}
+.list-old{ width:55px; height:22px; float:left;cursor:pointer; margin-top:13px;line-height:20px; text-align:center; vertical-align:middle; background-color:#666666; border:solid #666666 1px;}
+.list-old span{ color:#FFFFFF; font-size:12px; font-family:"宋体"}
+
+.addall{ width:48px; height:25px; margin-top:13px; line-height:25px; float:left; text-align:left; vertical-align:middle; cursor:pointer;}
+.addall img{ width:25px; height:25px; }
+.addall span{color:#666666; font-size:12px; font-family:"宋体"}
+
+.clearall{ width:48px; height:25px; margin-top:13px; line-height:25px; float:left; text-align:center; vertical-align:middle; cursor:pointer;}
+.clearall span{color:#666666; font-size:13px; font-family:"宋体"}
+.clearall-img{ width:30px; height:25px;margin-left:15px;  margin-top:13px; line-height:25px; float:left; text-align:center; vertical-align:middle; cursor:pointer;}
+.clearall-img img{width:25px; height:25px;}
+
+.music-list-close{ width:25px; height:25px; float:left; margin-left:45px; margin-top:13px;cursor:pointer;}
+.music-list-close img{ width:100%; height:100%;}
+
+.add-fileter-box{ display:none;-ms-transition-duration:5s; width:100%; height:100%; position:absolute; top:0px; background-color:#333333; z-index:3;filter:alpha(opacity=60); opacity:0.6;}
+.add-input-box{border-radius:10px; display:none; width:300px; height:130px; border:solid #999999 1px; position:absolute; z-index:4; top:250px; left:530px;background-color:#FFFFFF; padding-top:10px;}
+.add-box{ width:90%; height:30px; margin-left:5%; line-height:25px; text-align:left; vertical-align:bottom}
+.add-box span{ font-size:14px; color:#666666; font-family:"宋体"}
+.add-box input{ width:100%; height:100% ; font-size:14px; border:solid #999999 1px; color:#666666}
+.add-txt-count{ width:5%; height:25px; margin-left:84%; top:43px; position:absolute; z-index:5; line-height:25px; text-align:right; vertical-align:middle}
+.add-txt-count span{ color:#999999; font-size:12px; font-family:"宋体"}
+.musicBtn{ width:90%; height:30px; float:left; margin-left:5%;  margin-top:25px;}
+
+.musicBtn input{ width:90px; height:25px;  float:left; cursor:pointer; margin-left:10px;  background-color:#FFFFFF; border:solid #999999 1px;}
+.musicBtn input:hover{ color:#FF0000}
+
+
+.play-type-title-box{ display:none; font-weight:bold; line-height:60px; text-align:center; vertical-align:middle; width:200px; height:60px; border:solid #666666 1px; background-color:#333333; font-family:"宋体"; font-size:16px;color:#FFFFFF;border-radius:5px; position:absolute; z-index:7; top:45%; left:45%;}
+
+.play-page{ width:100%; height:607px;background-image: -ms-linear-gradient(top, #CC6666,#999999); position:absolute; top:0px; z-index:22 ; display:none}
+@-moz-document url-prefix(){.play-page{ width:100%; height:594px; background-color:#999999; position:absolute; top:0px; z-index:22 ; display:none}}
+.play-page-iframe{ width:100%; height:100%; margin-left:10%; }
+
+
+
+
+
+
+
